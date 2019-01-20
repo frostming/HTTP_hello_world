@@ -21,7 +21,7 @@ func handleRequest(conn net.Conn) {
 
 func main() {
 	var server net.Listener
-	server, err := net.Listen("tcp", net.JoinHostPort("localhost", "8002"))
+	server, err := net.Listen("tcp", net.JoinHostPort("localhost", "8001"))
 	if err != nil {
 		panic("listen error!")
 	}

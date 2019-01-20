@@ -9,7 +9,7 @@ async def handle_request(client, loop):
 
 async def run_server(loop):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as server:
-        server.bind(('localhost', 8002))
+        server.bind(('localhost', 8003))
         server.listen()
         server.setblocking(False)
         print("start listening...")
